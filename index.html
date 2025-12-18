@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T.A.R.D. ENERGY LLC — Technical & Management Consulting</title>
+
+<style>
+/* ====== GLOBAL STYLE / CONSTRUCTIVISM ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+section {
+    padding: 90px 8%;
+    position: relative;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #e63946;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ====== MENU ====== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(13,13,13,0.9);
+    z-index: 100;
+    border-bottom: 3px solid #e63946;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    margin: 0 18px;
+}
+
+nav a {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* ====== HERO ====== */
+#hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1178") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* ====== ABOUT ====== */
+#about {
+    background-color: #111;
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border: 5px solid #e63946;
+}
+
+/* ====== SERVICES ====== */
+#services {
+    background: #0d0d0d;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.service-box {
+    border: 3px solid #e63946;
+    padding: 30px;
+}
+
+.service-box p {
+    font-family: Arial, sans-serif;
+}
+
+/* ====== ADVANTAGES ====== */
+#advantages {
+    background-color: #111;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+/* ====== PROCESS ====== */
+#process {
+    background-color: #0d0d0d;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+/* ====== CONTACTS ====== */
+#contacts {
+    min-height: 100vh;
+    background: #e63946;
+    color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contacts h2 {
+    color: #0d0d0d;
+}
+
+.contact-text {
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+/* ====== FORM ====== */
+#form {
+    background: #111;
+}
+
+form {
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 14px;
+    background: #e63946;
+    border: none;
+    color: #0d0d0d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: #000;
+    padding: 30px 8%;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Who We Are</a></li>
+        <li><a href="#services">Expertise</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>T.A.R.D. ENERGY LLC</h1>
+        <p>
+            Technical consulting, IT support, and management advisory services designed for organizations
+            that operate in complex technical environments. We help companies stabilize infrastructure,
+            improve operational clarity, and make technology a controlled business asset rather than a risk.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Engineering Confidence</h2>
+    <div class="about-wrapper">
+        <div class="about-text">
+            <p>
+                T.A.R.D. ENERGY LLC provides consulting services at the intersection of technology, operations,
+                and management decision-making. We work with growing businesses that require reliable IT systems,
+                clear operational structures, and practical executive-level guidance.
+            </p>
+            <p>
+                Our approach is based on analysis, accountability, and measurable outcomes rather than abstract
+                theory. We focus on understanding how systems actually function in real business conditions.
+            </p>
+            <p>
+                By aligning technology with management goals, we reduce operational friction and support
+                long-term stability.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Team">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Core Competencies</h2>
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>Technical Consulting</h3>
+            <p>
+                We assess existing technical infrastructures, identify weaknesses, and provide actionable
+                recommendations. Our consulting is focused on reliability, scalability, and cost control.
+                Each solution is adapted to actual operational constraints.
+            </p>
+        </div>
+        <div class="service-box">
+            <h3>IT Support & Systems Oversight</h3>
+            <p>
+                Ongoing IT support with an emphasis on system continuity and risk reduction. We help organizations
+                manage vendors, internal IT processes, and incident response. The goal is predictable and stable
+                performance.
+            </p>
+        </div>
+        <div class="service-box">
+            <h3>Management Consulting</h3>
+            <p>
+                We support leadership teams with operational structuring, process optimization, and decision
+                frameworks. Our work translates technical realities into management-level clarity and control.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages">
+    <h2>Strategic Advantages</h2>
+    <div class="advantages-grid">
+        <div>
+            <h3>Operational Pragmatism</h3>
+            <p>
+                We focus on what works in real conditions, not theoretical models. Every recommendation is grounded
+                in execution and accountability.
+            </p>
+        </div>
+        <div>
+            <h3>Cross-Disciplinary Expertise</h3>
+            <p>
+                Our work bridges IT, operations, and management, eliminating communication gaps between technical
+                teams and decision-makers.
+            </p>
+        </div>
+        <div>
+            <h3>Long-Term Stability</h3>
+            <p>
+                We design solutions that remain effective over time, reducing dependency on constant intervention
+                and emergency fixes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+    <h2>How We Work</h2>
+    <div class="process-steps">
+        <div>
+            <h3>Assessment</h3>
+            <p>
+                We analyze current systems, processes, and management structures to identify risks and inefficiencies.
+            </p>
+        </div>
+        <div>
+            <h3>Strategy Design</h3>
+            <p>
+                Clear, structured solutions are developed with defined priorities, responsibilities, and metrics.
+            </p>
+        </div>
+        <div>
+            <h3>Implementation Support</h3>
+            <p>
+                We support execution and adjustment, ensuring recommendations translate into operational results.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+    <h2>Direct Communication</h2>
+    <div class="contact-text">
+        <p>
+            For consulting inquiries, technical support discussions, or partnership opportunities, please contact
+            us by email. We value direct and structured communication and respond with clarity and purpose.
+        </p>
+        <p>
+            <strong>Email:</strong> support@tardenergy.pro<br>
+            <strong>Address:</strong> 800 W 47TH St Ste 525, Kansas City, MO, 64112, US
+        </p>
+    </div>
+</section>
+
+<!-- FORM -->
+<section id="form">
+    <h2>Request a Consultation</h2>
+    <p style="font-family: Arial, sans-serif; max-width: 500px; margin-bottom: 20px;">
+        Leave your contact details and a brief description of your challenge. We will review the request
+        and respond with a structured next step.
+    </p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Describe your request"></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 T.A.R.D. ENERGY LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
